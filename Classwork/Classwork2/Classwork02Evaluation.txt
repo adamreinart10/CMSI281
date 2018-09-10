@@ -1,0 +1,32 @@
+
+Classwork02 Evaluation
+======================
+
+Nice job on this assignment, with a couple of comments:
+
+WHAT!?! No FILE HEADERS?!?!?  I can't believe it.....  Totally
+ruined a perfect score, Adam...
+
+scores:
+=============================
+MyFileCopier.java
+   prompts user for filename  [1 pt]
+   calls Source constructor   [1 pt]
+   calls getter method        [1 pt]
+   calls Target constructor   [1 pt]
+Source.java
+   reads file completely      [1 pt]
+   has getter or returning    [1 pt]
+Target.java
+   writes file completely     [1 pt]
+file hdrs (3)                 [3 pt]     0 points
+no tabs                       [1 pt]
+indenting consistent          [1 pt]
+descriptive variable names    [1 pt]
+
+total possible points         13 points
+
+
+you got 10 out of 13 which is 76.92% which is a C.
+
+
