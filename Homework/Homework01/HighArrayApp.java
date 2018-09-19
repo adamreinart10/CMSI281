@@ -1,7 +1,7 @@
 /************************************************************************/
    /* File Name:  HighArrayApp.java                                                 *
    /* Project: Homework01
-   /* Date: 9/18/2018
+   /* Date: 9/19/2018
    /* Author: Adam Reinart                                  *
    /* Language:   Java                    *
    /*                         *                                       *
@@ -30,6 +30,9 @@ class HighArrayApp
       arr.insert(11);
       arr.insert(00);
       arr.insert(66);
+      arr.insert(66);
+      arr.insert(66);
+      arr.insert(66);
       arr.insert(33);
       arr.insert(55);
 
@@ -41,15 +44,18 @@ class HighArrayApp
       else
          System.out.println("Can't find " + searchKey);
 
-      arr.delete(00);               // delete 3 items
+      arr.delete(00);               // delete 4 items
       arr.delete(44);
       arr.delete(99);
+      arr.delete(66);
+
+
 
       arr.display();                // display items again
 
       System.out.println("Max value: " + arr.getMax());
       arr.noDups();
-        System.out.println("New Array: ");
+      System.out.println("New Array: ");
       arr.display();
-      }  // end main()
-   }  // end class HighArrayApp
+      }
+   }
