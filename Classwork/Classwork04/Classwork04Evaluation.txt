@@ -1,0 +1,30 @@
+
+Classwork03 Evaluation
+======================
+
+Nice job on this assignment, with a couple of comments:
+
+Sorry, Adam, but your code doesn't compile.  There are a total
+of 12 compile errors when I compile both files.  There are 11
+in the IntLinkedList.java file and one in the Tester.java file.
+If it doesn't compile, I can't evaluate it.
+
+scores:
+=============================
+IntLinkedList.java
+   insertAt()                 [0 pt]
+   removeAt()                 [0 pt]
+IntLinkeListTester.java
+   added tests to existing    [OPTIONAL 1 pt]
+      won't compile, so can't give credit
+headers in all files          [2 pt]
+code style                    [1 pt]
+
+total possible points         5 points
+      additional credit       1 point
+
+
+you got 3 out of 5 which is 60% which is a D
+
+Make sure your code compiles in the command line, using the
+command "javac <filename>.java"......
