@@ -1,7 +1,7 @@
-//Rediet Teferi and Adam Reinart
-// October 15, 2018
-/* This Java file takes a queue and displays the contents
- of the queue */
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
+//Date: October 13, 2018
+//Purpose: This Java file takes a queue and displays the contents
+// of the queue 
 class QueueApp{
   public static void main(String[] args){
 
