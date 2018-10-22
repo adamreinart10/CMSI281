@@ -1,68 +1,83 @@
-//Rediet Teferi and Adam Reinart
-// October 15, 2018
-/* This Java file takes a dequeue and displays the contents
- of the dequeue */
+//Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
+//Date: October 13, 2018
+//Purpose: The purpose of this is to implement a Deque
 
-class Deque {
-  private int maxSize;
-  private long[] dequeArray;
-  private int leftAr;
-  private int rightAr;
-  private int nItems;
+ public class Deque {
+     private int max;
+     private int start;
+     private int end;
+     private int nItems;
+     private long[] Array;
 
-  public void contentDequeDisplayer(){
-    for (int i = 0 ;i < nItems;i++){
-      System.out.print(dequeArray[(leftAr + i) % nItems]);
-    }
-  }
 
-  public Deque(int s){ // constructor
+     public Deque( int size ) {
+         max = size;
+         start = 0;
+         end = -1;
+         nItems = 0;
+         Array = new long[max];
+     }
 
-    maxSize = s;
-    dequeArray = new long[maxSize];
-    leftAr = 0;
-    rightAr = 0;
-    nItems = 0;
-  }
-  public void insertLeft(long j){ // put item at the rightAr of dequeue
-    if(leftAr == maxSize - 1) // deal with wraparound
-      leftAr = 0;
-    if (leftAr == maxSize) {
-      removeLeft();
-    }
-    dequeArray[++leftAr] = j; // increment to rightAr and insert
-    nItems++; // one more item
-  }
-  public long removeLeft(){ // take item from leftAr of queue
-    long temp = dequeArray[leftAr++]; // get value and increment leftAr
-    if(leftAr == maxSize) // deal with wraparound
-      leftAr = 0;
-    nItems--; // one less item
-    return temp;
-  }
-  public void insertRight(long j){ // put item at the rightAr of dequeue
-    if(rightAr == maxSize - 1) // deal with wraparound
-      rightAr = -1;
-    dequeArray[++rightAr] = j; // increment to rightAr and insert
-    nItems++; // one more item
-  }
-  public long removeRight(){ // take item from leftAr of queue
-    long temp = dequeArray[rightAr--]; // get value and increment leftAr
-    if(rightAr == 0) // deal with wraparound
-      rightAr = maxSize - 1;
-    nItems--; // one less item
-    return temp;
-  }
-  public long peekleftAr(){ // peek at leftAr of queue
-    return dequeArray[leftAr];
-  }
-  public boolean isEmpty(){ // true if queue is empty
-    return (nItems==0);
-  }
-  public boolean isFull(){ // true if queue is full
-    return (nItems==maxSize);
-  }
-  public int size(){ // number of items in queue
-    return nItems;
-  }
-}
+     //insert at start of array
+     public void insertLeft( long j ) {
+         if ( start == 0 ) {
+             start = max;
+         }
+         Array[--start] = j;
+         nItems++;
+     }
+
+     //insert at end of array
+     public void insertRight( long j ) {
+         if ( end == max - 1 ) {
+             end = -1;
+         }
+         Array[++end] = j;
+         nItems++;
+     }
+
+     //Removes from the start
+     public long removeLeft() {
+         long temporary = Array[start++];
+         if ( start == max ) {
+             start = 0;
+         }
+         nItems--;
+         return temporary;
+     }
+
+     //removes item at end
+     public long removeRight() {
+         long temporary = Array[end--];
+         if ( end == -1 ) {
+             end = max-1;
+         }
+         nItems--;
+         return temporary;
+     }
+
+
+     public boolean isEmpty() {
+         return ( nItems == 0 );
+     }
+
+
+     public boolean isFull() {
+         return ( nItems == max );
+     }
+
+
+     public void displayDequeue() {
+         int index = start;
+         for ( int i = 0; i < nItems; i++ ) {
+             System.out.print( Array[index] + " " );
+             if ( index == max - 1 ) {
+                 index = 0;
+             }
+             else {
+                 index++;
+             }
+         }
+         System.out.println();
+     }
+   }
