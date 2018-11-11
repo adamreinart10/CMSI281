@@ -1,0 +1,62 @@
+
+Homework03 Evaluation
+======================
+
+Pretty good work on this assignment!
+Here are a couple of observations and comments:
+
+The testing of BubbleSortApp is pretty anemic.  You only have
+one test case which is not nearly enough.  You'd want to test
+both positive and negative numbers, zeros, pre-sorted in order,
+pre-sorted in reverse order and so on.  You should also display
+what the expected output is, so that the user can see if things
+are working properly.
+
+Your Simon game doesn't actually work.  I ran it and it told me
+the "first disk" is "B" but when I entered "B" the game says
+"game over.  Play again!".  So, it's not comparing correctly,
+and the idea was to *ask* the user if they *want* to play again
+and then re-start if they say "yes".
+
+The coding style in "ArrayBub.java" needs improvement.  Make
+indenting consistent among ALL OF YOUR FILES.  If you're using
+two spaces per indent, make them all that way.  Be sure to
+indent ALL lines in a block or method definition.
+
+
+scores:
+=============================
+XXXXX-Sorter.java
+   oddEvenSort implemented                   [1 pt.]
+   compiles                                  [1 pt.]
+   works as advertised                       [1 pt.]
+
+SimonGame.java
+   randomized array                          [1 pt.]
+   display/erase sequences                   [1 pt.]
+   check user's guess against array          [0.5 pt.]
+   increment letter count each iteration     [0.5 pt.]
+   play again message on incorrect entry     [0.5 pt.]
+   compiles                                  [1 pt.]
+   works as advertised                       [0 pt.]
+
+HuffmanCoding.java
+   count character occurrences               [0 pt.]
+   use some sort of queue to build tree      [0 pt.]
+   tree constructed correctly                [0 pt.]
+   message encoded correctly                 [0 pt.]
+   message decoded correctly                 [0 pt.]
+   compiles                                  [0 pt.]
+   works as advertised                       [0 pt.]
+
+Coding style                                 [1 pt.]
+Tests written to test all classes            [1 pt.]
+Headers in all files                         [1 pt.]
+
+Total credit is 13 for Sorter and either Simon or Huffman
+ extra credit is 7 points for other of Simon or Huffman
+-------------------------
+ Grand total is 20 points for all three
+
+you got 10.5 out of 13 which is 80.77% which is a B-minus
+
