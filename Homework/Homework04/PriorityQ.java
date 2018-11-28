@@ -2,7 +2,7 @@
 // Project: Homework 4
 //Authors: Joshua Patterson & Rediet Teferi & Adam Reinart
 //Date: November 27, 2018
-//Purpose: The purpose of this is to implement a iPriorityQueue
+//Purpose: The purpose of this is to implement a PriorityQueue
 
 
 import java.util.*;
