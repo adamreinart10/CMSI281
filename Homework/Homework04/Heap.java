@@ -51,6 +51,16 @@ public boolean insert(int key){
   return true;
 }
 
+public int findMin(){
+  return heapArray[0].getKey();
+  // find the minimum
+}
+
+public Node[] getArray(){
+  return heapArray;
+  // return the heapArray
+}
+// ----------------------------------------
 public void trickleUp(int index){
   int parent = (index-1) / 2;
   Node bottom = heapArray[index];
@@ -62,6 +72,8 @@ public void trickleUp(int index){
   heapArray[index] = bottom;
 }
 
+// ------------------------------------------
+
 public Node remove(){
   Node root = heapArray[0];
   heapArray[0] = heapArray[--currentSize];
@@ -69,13 +81,7 @@ public Node remove(){
   return root;
 }
 
-public int findMin(){
-  return heapArray[0].getKey();
-}
 
-public Node[] getArray(){
-  return heapArray;
-}
 
 public void trickleDown(int index){
   int largerChild;
@@ -154,8 +160,8 @@ public void displayHeap(){
       for(int k=0; k<nBlanks*2-2; k++){
         System.out.print(' ');
     }
-}
-}
+          }
+        }
   System.out.println(dots + dots);
-}
+    }
 }
