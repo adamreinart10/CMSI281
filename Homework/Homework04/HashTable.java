@@ -83,7 +83,7 @@ class HashTable{
     return null; 
   } 
 
-  public Elements find(String key) // find element with key{
+  public Elements find(String key) {   // find element with key{
     int hashVal = hashFunc(key); 
     while(hashArray[hashVal] != null){ 
     if(hashArray[hashVal].getKey() == key)

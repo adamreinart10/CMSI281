@@ -1,0 +1,67 @@
+
+Homework04 Evaluation
+======================
+
+Nice job on this assignment...
+Here are a couple of observations and comments:
+
+Your code looks great and thanks for doing headers!
+
+These were from Adam's repo.
+
+I had to fix the HashTable.java file for a missing "{".  No
+biggie, as I've said before, one error I'll fix for free.
+
+HashTableApp.java doesn't compile, either.  It needs to handle
+the IOException which might be thrown when doing console input.
+I'm not going to fix that one, because there are different ways
+to handle it and I don't know which method you prefer.  You'd
+need to add a try/catch block somewhere.....  I'm giving you
+half credit on it, though, since you did write code...
+
+I don't see a digit folding hasher program in this directory
+at all....  sorry about that!
+
+scores:
+=============================
+Tree Traverser
+   inOrderTraverser method implemented       [1 pt.]
+   2 test sets with at least minimal nodes   [2 pt.]
+   produces proper sequences                 [2 pt.]
+
+Priority Queue
+   Queue creation works correctly            [1 pt.]
+   insertion works correctly                 [1 pt.]
+   isFull() works correctly                  [1 pt.]
+   isEmpty() works correctly                 [1 pt.]
+   removal() works correctly                 [1 pt.]
+   heap representation works correctly       [1 pt.]
+
+Linear Probing String Hasher
+   menu works                                [0.5 pt.]
+   shows contents                            [0.5 pt.]
+   hash table created correctly              [0.5 pt.]
+   insertion works correctly                 [0.5 pt.]
+   linear probing works correctly            [0.5 pt.]
+   deletion works correctly                  [0.5 pt.]
+   finding works correctly                   [0.5 pt.]
+
+Digit Folding Hasher
+   menu works                                [0 pt.]
+   shows contents                            [0 pt.]
+   insertion works correctly                 [0 pt.]
+   linear probing works correctly            [0 pt.]
+   deletion works correctly                  [0 pt.]
+   finding works correctly                   [0 pt.]
+
+Coding style                                 [1 pt.]
+Tests written to test all classes            [1 pt.]
+Headers in all files                         [4 pt.]
+
+Total credit is 30 points
+-------------------------
+
+you got 20.5 out of 30 which is 68.33% which is an D-plus
+I'll round up significantly so you can get a solid "C".
+   adding 3 full points makes it a 75.81%.
+
